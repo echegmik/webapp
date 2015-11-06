@@ -4,10 +4,11 @@ body {
 }
 
 h2 {
-font-size: 2em;
+font-size: 3em;
 font-family: 'HelveticaNeue-Light';
 font-weight: normal;
 color: #17608C;
+padding-bottom: 1em;
 }
 
 .wrapper {
@@ -35,4 +36,26 @@ button{
   position: relative;
   width: 25%;
   display:inline-block;
+}
+
+.btn-node {
+  border-radius: 0;
+  margin-left: 0.3em;
+  margin-right:0.3em;
+}
+.btn-red {
+  background-color: #E56385;
+}
+.btn-blue {
+  background-color: #62B3E5;
+}
+.btn-green {
+  background-color: #6CC04A;
+}
+.btn-off {
+  background-color: #FFFFFF;
+  border: 1px #CCCCCC;
+}
+.btn-group {
+  display: inline-block;
 }

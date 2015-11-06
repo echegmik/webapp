@@ -8,23 +8,27 @@
     <script src="nodes.js"></script>
     <!-- Bootstrap core CSS -->
      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
      <link rel="stylesheet" href="nodes.css">
   </head>
   <body>
     <div ng-controller="NodeController" class="wrapper">
       <h2> {{nodes.length}} Nodes Registered in the COAP Registry </h2>
-        <div ng-repeat-start="node in nodes" >
-         <div  class="node col-md-4">
-            <div id="circle1" class="circle" style='background-color:{{node.color}}'></div>
-            <img src="images/freedom_board_thread.jpg" />
-            <p> {{node.id}} </p>
-             <button ng-click="putColor(node.id, 'red')">Red</button><br />
-             <button ng-click="putColor(node.id, 'green')">Green</button><br />
-             <button ng-click="putColor(node.id, 'blue' )">Blue</button><br />
-             <button ng-click="putColor(node.id, 'off')">Off</button><br />
+        <div class="container">
+          <div ng-repeat="node in nodes" clas="row">
+           <div  class="col-md-4">
+              <div id="circle1" class="circle" style='background-color:{{node.color}}'></div>
+              <img src="images/freedom_board_thread.jpg" />
+              <p> {{node.id}} </p>
+              <span class="btn-group">
+                 <button type='button' class="btn btn-lg btn-node btn-red" ng-click="putColor(node.id, 'red')"></button>
+                 <button type='button' class="btn btn-lg btn-node btn-green" ng-click="putColor(node.id, 'green')"></button>
+                 <button type='button' class="btn btn-lg btn-node btn-blue" ng-click="putColor(node.id, 'blue' )"></button>
+                 <button type='button' class="btn btn-lg btn-node btn-off" ng-click="putColor(node.id, 'off')"></button>
+              </span>
+          </div>
         </div>
-        </div>
-      <p ng-repeat-end ></p>
+      </div>
    </div>
   </body>
 </html>
