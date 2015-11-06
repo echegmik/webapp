@@ -29,7 +29,7 @@ app.put('/:id/LED', function (req, res) {
        console.log( data );
        res.end( JSON.stringify(data));
    });
-})
+
 
 /* put the server up */
 var server = app.listen(8081, function () {
