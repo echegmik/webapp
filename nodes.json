@@ -1,0 +1,17 @@
+{
+   "node1" : {
+      "color" : "red",
+      "type": "freedom board",
+      "id": "fd00:ff1:ce0b:a5e0:4:a30b:1b:3d3d"
+   },
+   "node2" : {
+      "color" : "blue",
+      "type": "atmel router",
+     "id": "fd00:ff1:ce0b:a5e0:fcc2:3d00:4:a5ee"
+   },
+   "node3" : {
+      "color" : "blue",
+      "type": "Beaglebone",
+     "id": "fd00:ff1:ce0b:a5e0:fcc2:3d00:4:a5ee"
+   }
+}

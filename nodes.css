@@ -1,0 +1,38 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+h2 {
+font-size: 2em;
+font-family: 'HelveticaNeue-Light';
+font-weight: normal;
+color: #17608C;
+}
+
+.wrapper {
+    text-align:center;
+}
+.circle {
+  position: absolute;
+  top: 0px ;
+  right: 80px;
+	border-radius: 50%;
+	width: 80px;
+	height:80px;
+	/* width and height can be anything, as long as they're equal */
+  background: green;
+}
+
+.unstyled {
+  list-style: none;
+}
+
+button{
+  display:inline-block;
+}
+.node {
+  position: relative;
+  width: 25%;
+  display:inline-block;
+}
